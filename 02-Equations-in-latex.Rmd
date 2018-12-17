@@ -1,0 +1,67 @@
+# Editing equations in R Markdown
+
+We do not write nearly as much math in our field than  our colleagues in statistics or math. But we do enough to have a bit of a tutorial.  I have borrowed this entire section from the [excellent tutorial from Dr Shalizi](http://www.stat.cmu.edu/~cshalizi/rmarkdown/#math-in-r-markdown) again. R Markdown gives you the syntax to render complex mathematical formulas and derivations, and have them displayed very nicely.  Like code, the math can either be inline or set off (displays).
+
+<br/>
+
+## Inline equations
+Inline math is marked off witha pair of dollar
+signs (`$`), as $\pi r^2$ or $e^{i\pi}$.
+
+```
+Inline math is marked off witha pair of dollar
+signs (`$`), as $\pi r^2$ or $e^{i\pi}$.
+```
+<br/>
+
+## Set off equations
+In the [R markdown tutorial](https://francoisbirgand.github.io/tutorial-RMarkdown_instructions.html) I have other instructions about equations that are really related to R markdown. I now prefer the way it is done in `bookdown` much better, particularly for the referencing. 
+
+This simple LaTeX syntax 
+
+```
+\begin{equation}
+H_2O + H_2O \rightleftharpoons OH^- + H_3O^+
+(\#eq:autoprotolysis)
+\end{equation}
+```
+
+yields 
+
+\begin{equation}
+H_2O + H_2O \rightleftharpoons OH^- + H_3O^+
+(\#eq:autoprotolysis)
+\end{equation}
+
+Notice that the number \@ref(eq:autoprotolysis) is automatically added as you put in the text `\@ref(eq:autoprotolysis)`.
+
+Of course, it is possible to write a little more complicated equations. The limit is LaTeX. I have not explored all what there is but here is an example that was useful for me:
+
+```
+\begin{equation}
+H_nA \rightleftharpoons H_{n-1}A^- + H^+ \hspace{0.6cm} K_{a1} = \frac{[H_{n-1}A^-][H^+]}{[H_nA]} \hspace{0.6cm} [H_{n-1}A^-] = [H_nA] \frac {K_{a1}}{[H^+]}\\
+H_{n-1}A^- \rightleftharpoons H_{n-2}A^{2-} + H^+ \hspace{0.6cm} K_{a2} = \frac{[H_{n-2}A^{2-}][H^+]}{[H_{n-1}A]} \hspace{0.6cm} [H_{n-2}A^-] = [H_nA] \frac {K_{a1}K_{a2}}{[H^+]^2}\\
+\\
+\vdots \hspace{6cm} \vdots \hspace{6cm} \vdots\\
+\\
+HA^{(n-1)-} \rightleftharpoons A^{n-} + H^+ \hspace{0.6cm} K_{an} = \frac{[A^{n-}][H^+]}{[HA^{(n-1)-}]} \hspace{0.6cm} [A^{n-}] = [H_nA] \frac {K_{a1}K_{a2} \ldots  K_{an}}{[H^+]^n}\\
+
+(\#eq:HnApoly)
+\end{equation}
+```
+
+yields
+
+\begin{equation}
+H_nA \rightleftharpoons H_{n-1}A^- + H^+ \hspace{0.6cm} K_{a1} = \frac{[H_{n-1}A^-][H^+]}{[H_nA]} \hspace{0.6cm} [H_{n-1}A^-] = [H_nA] \frac {K_{a1}}{[H^+]}\\
+H_{n-1}A^- \rightleftharpoons H_{n-2}A^{2-} + H^+ \hspace{0.6cm} K_{a2} = \frac{[H_{n-2}A^{2-}][H^+]}{[H_{n-1}A]} \hspace{0.6cm} [H_{n-2}A^-] = [H_nA] \frac {K_{a1}K_{a2}}{[H^+]^2}\\
+\\
+\vdots \hspace{6cm} \vdots \hspace{6cm} \vdots\\
+\\
+HA^{(n-1)-} \rightleftharpoons A^{n-} + H^+ \hspace{0.6cm} K_{an} = \frac{[A^{n-}][H^+]}{[HA^{(n-1)-}]} \hspace{0.6cm} [A^{n-}] = [H_nA] \frac {K_{a1}K_{a2} \ldots  K_{an}}{[H^+]^n}\\
+
+(\#eq:HnApoly)
+\end{equation}
+
+
+Again, you see that the numbering of the equation is automatic!! 

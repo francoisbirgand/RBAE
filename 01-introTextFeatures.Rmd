@@ -1,0 +1,146 @@
+# Introduction: Text features {#intro}
+
+
+The markdown syntax is very simple and this is one of the reasons why it is so attractive.  You can find all the syntax with [this R Markdown reference document](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf), but I thought I would go through them as I have learned several tricks I could not easily find in the document.  
+
+<br/>
+
+## Paragraph Breaks and Forced Line Breaks
+
+To insert a break between paragraphs, include a single completely blank line.
+
+To force a line break, put _two_ blank  spaces at the end of a line.
+
+```
+To insert a break between paragraphs, include a single completely blank line.
+
+To force a line break, put _two_ blank spaces at the end of a line.
+```
+
+<br/>
+
+## Headers
+
+The character `#` at the beginning of a line means that the rest of the line is interpreted as a section header.  The number of `#`s at the beginning of the line indicates the level of the section (1,2,3, etc.).  For instance, `Components of R Markdown` above is preceded by a single `#`, because it is of level 1 but `Headers` at the start of this paragraph is preceded by `###` because it is of level 3.  Up to six levels are understood by Markdown.  Do not interrupt these headers by line-breaks. Make sure that in your .Rmd file, you leave a blank line before a header, otherwise, `pandoc` will not render it as a header.
+
+<br/>
+
+## Italics and bold
+
+```
+*italics* and _italics_
+```
+renders *italics* and _italics_
+
+```
+**bold** and __bold__
+```
+renders **bold** and __bold__
+
+<br/>
+
+## Supbscripts and superscripts
+
+To write sub- and superscripts, like in NO~3~^-^ or PO~4~^3-^ write as
+
+```
+NO~3~^-^ or PO~4~^3-^
+```
+
+PO~4~^3-^ does not look as neat as $PO_4^{3-}$ 
+
+```
+PO~4~^3-^ does not look as neat as $PO_4^{3-}$
+```
+
+but looks more seamless in a normal text because the former does not appear as an [equation](#inline-equations) while the other does.
+
+<br/>
+
+## Lists
+```
+* unordered list
+* item 2
+    + sub-item 1                #4 <spaces> before +
+    + sub-item 2                #4 <spaces> before +
+```
+
+* unordered list
+* item 2
+    + sub-item 1
+    + sub-item 2
+ 
+```
+1. ordered list
+2. item 2
+    + sub-item 1                #4 <spaces> before +
+    + sub-item 2                #4 <spaces> before +
+```
+1. ordered list
+2. item 2
+    + sub-item 1
+    + sub-item 2 
+
+In the ordered list, there is a subtlety unrevealed in the Rmardown documentation, which is that the numbering *always* increases, and that *only* the number value of the first item matters. So, one cannot have a list in a decreasing order (which is too bad because when one makes a list of his/her publications, it is nice to have a decreasing order...), and the only number that matters is the first one.  So this code 
+<br/>
+
+```
+5. ordered list
+7. item 2
+2. item 2
+                                # blank line for list to take into effect
+    b. sub-item 1               #4 <spaces> before b
+    a. sub-item 2  
+```
+<br/>
+renders this:
+
+5. ordered list
+7. item 2
+2. item 2
+
+    b. sub-item 1                
+    a. sub-item 2               
+   
+<br/>
+
+## Quotations
+> R Markdown is, in particular, both "free as in beer" (you will never pay a dollar for software to use it) and "free as in speech" (the specification is completely open to all to inspect).
+
+Is a quotation from [Dr Shalizi](http://www.stat.cmu.edu/~cshalizi/rmarkdown/) which code starts with a `>`
+```
+> R Markdown is, in particular, both "free as in beer" etc.
+```
+
+<br/>
+
+## Computer type
+This is to differentiate regular text from `code text` so that both can be easily differentiated: `R` vs R.
+```
+This is to differentiate regular text from `code text` so that both can be easily differentiated: `R` vs R.
+```
+An entire paragraph of code which is rendered as a "code box" in html (but not in pdf) starts with three "back-ticks", and end the same
+
+<br/>
+<a id="link_ref"></a>
+
+## Symbols and Special characters
+The principal keys, like the alphabet, are understood univocally across platforms such as Windows, Mac OS, or Linux. However, there are special characters such &deg;, &sup2; or &micro; that have different embedded codes across the different platforms. For example, if you and your co-worker work on the same document and one works using Windows and the other uses Mac, the actual symbol in the code text may not show the same one from one to the other plateform. 
+
+For example, if I write in an R markdown document "10 m&sup2;" and I have added the &sup2; symbol by typing on a PC "Alt+0178", as this corresponds to the ascii code for &sup2; in Windows, the same document open on a Mac will render "10 m?", because it cannot interpret the embedded code for &sup2;...
+
+Several consequences: 
+
+1. **NEVER** use special characters in variable names in an `R` code, 
+2. in an R markdown document, use the HTML Number or HTML name in the text
+
+[HTML Number and Names](https://www.ascii.cl/htmlcodes.htm) can be found on this [ascii page](https://www.ascii.cl/htmlcodes.htm) or on this page for [greek letter codes and some other symbols](http://www.dionysia.org/html/entities/symbols.html)
+
+So to type T&deg;C, m&sup2;, &micro;m, or p&epsilon; you type like this
+
+```
+So to type T&deg;C, m&sup2;, &micro;m, or p&epsilon; you type like this
+```
+
+Do not forget to add the ";" !!!
+<br/><br/><br/>

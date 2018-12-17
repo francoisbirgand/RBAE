@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>A BAE Book Example</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook.">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="A BAE Book Example" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="A BAE Book Example" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+<meta name="author" content="BAE Faculty">
+
+
+<meta name="date" content="2018-12-17">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="editing-equations-in-r-markdown.html">
+<link rel="next" href="referencing-and-cited-references.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction: Text features</a><ul>
+<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#paragraph-breaks-and-forced-line-breaks"><i class="fa fa-check"></i><b>2.1</b> Paragraph Breaks and Forced Line Breaks</a></li>
+<li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#headers"><i class="fa fa-check"></i><b>2.2</b> Headers</a></li>
+<li class="chapter" data-level="2.3" data-path="intro.html"><a href="intro.html#italics-and-bold"><i class="fa fa-check"></i><b>2.3</b> Italics and bold</a></li>
+<li class="chapter" data-level="2.4" data-path="intro.html"><a href="intro.html#supbscripts-and-superscripts"><i class="fa fa-check"></i><b>2.4</b> Supbscripts and superscripts</a></li>
+<li class="chapter" data-level="2.5" data-path="intro.html"><a href="intro.html#lists"><i class="fa fa-check"></i><b>2.5</b> Lists</a></li>
+<li class="chapter" data-level="2.6" data-path="intro.html"><a href="intro.html#quotations"><i class="fa fa-check"></i><b>2.6</b> Quotations</a></li>
+<li class="chapter" data-level="2.7" data-path="intro.html"><a href="intro.html#computer-type"><i class="fa fa-check"></i><b>2.7</b> Computer type</a></li>
+<li class="chapter" data-level="2.8" data-path="intro.html"><a href="intro.html#symbols-and-special-characters"><i class="fa fa-check"></i><b>2.8</b> Symbols and Special characters</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="editing-equations-in-r-markdown.html"><a href="editing-equations-in-r-markdown.html"><i class="fa fa-check"></i><b>3</b> Editing equations in R Markdown</a><ul>
+<li class="chapter" data-level="3.1" data-path="editing-equations-in-r-markdown.html"><a href="editing-equations-in-r-markdown.html#inline-equations"><i class="fa fa-check"></i><b>3.1</b> Inline equations</a></li>
+<li class="chapter" data-level="3.2" data-path="editing-equations-in-r-markdown.html"><a href="editing-equations-in-r-markdown.html#set-off-equations"><i class="fa fa-check"></i><b>3.2</b> Set off equations</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="code-chunks.html"><a href="code-chunks.html"><i class="fa fa-check"></i><b>4</b> Code chunks</a><ul>
+<li class="chapter" data-level="4.1" data-path="code-chunks.html"><a href="code-chunks.html#inserting-pictures"><i class="fa fa-check"></i><b>4.1</b> Inserting pictures</a></li>
+<li class="chapter" data-level="4.2" data-path="code-chunks.html"><a href="code-chunks.html#inserting-several-pictures"><i class="fa fa-check"></i><b>4.2</b> Inserting several pictures</a></li>
+<li class="chapter" data-level="4.3" data-path="code-chunks.html"><a href="code-chunks.html#inserting-videos"><i class="fa fa-check"></i><b>4.3</b> Inserting videos</a></li>
+<li class="chapter" data-level="4.4" data-path="code-chunks.html"><a href="code-chunks.html#inserting-r-code"><i class="fa fa-check"></i><b>4.4</b> Inserting R code</a></li>
+<li class="chapter" data-level="4.5" data-path="code-chunks.html"><a href="code-chunks.html#inserting-tables"><i class="fa fa-check"></i><b>4.5</b> Inserting tables</a></li>
+<li class="chapter" data-level="4.6" data-path="code-chunks.html"><a href="code-chunks.html#other-important-things-about-code-chunks"><i class="fa fa-check"></i><b>4.6</b> Other important things about code chunks</a></li>
+<li class="chapter" data-level="4.7" data-path="code-chunks.html"><a href="code-chunks.html#naming-chunks"><i class="fa fa-check"></i><b>4.7</b> Naming Chunks</a></li>
+<li class="chapter" data-level="4.8" data-path="code-chunks.html"><a href="code-chunks.html#adjusting-figure-sizes-and-alignments"><i class="fa fa-check"></i><b>4.8</b> Adjusting figure sizes and alignments</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="referencing-and-cited-references.html"><a href="referencing-and-cited-references.html"><i class="fa fa-check"></i><b>5</b> Referencing and Cited References</a><ul>
+<li class="chapter" data-level="5.1" data-path="referencing-and-cited-references.html"><a href="referencing-and-cited-references.html#autoreferencing"><i class="fa fa-check"></i><b>5.1</b> Autoreferencing</a></li>
+<li class="chapter" data-level="5.2" data-path="referencing-and-cited-references.html"><a href="referencing-and-cited-references.html#cited-references"><i class="fa fa-check"></i><b>5.2</b> Cited references</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="referencing-and-cited-references.html"><a href="referencing-and-cited-references.html#link-to-citations"><i class="fa fa-check"></i><b>5.2.1</b> Link to citations</a></li>
+<li class="chapter" data-level="5.2.2" data-path="referencing-and-cited-references.html"><a href="referencing-and-cited-references.html#csl-and-styling-of-citations"><i class="fa fa-check"></i><b>5.2.2</b> CSL and styling of citations</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>6</b> Final words</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A BAE Book Example</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="code-chunks" class="section level1">
+<h1><span class="header-section-number">Chapter 4</span> Code chunks</h1>
+<p>So this is one of the great beauties of the <code>R markdown</code> platform: You insert text, equations, and code chunks! Code chunks are used to run <code>R</code> code, <code>python</code> code, and others such as <code>C</code> and <code>fortran</code> codes! In <code>bookdown</code>, one also uses them to insert pictures, videos, and tables.</p>
+<div id="inserting-pictures" class="section level2">
+<h2><span class="header-section-number">4.1</span> Inserting pictures</h2>
+<p>This code:</p>
+<pre><code>```{r "diagenesis-diffusion-directions", eval=TRUE, echo=FALSE, out.width = '100%', fig.align = 'center', fig.cap="Diffusion fluxes of electron acceptors and all other soil diagenesis processes of a theoretical layered wetland soil"}
+knitr::include_graphics("pictures/diagenesis-diffusion-directions.png")
+```</code></pre>
+<p>yields:</p>
+<div class="figure" style="text-align: center"><span id="fig:diagenesis-diffusion-directions"></span>
+<img src="pictures/diagenesis-diffusion-directions.png" alt="Diffusion fluxes of electron acceptors and all other soil diagenesis processes of a theoretical layered wetland soil" width="100%" />
+<p class="caption">
+Figure 4.1: Diffusion fluxes of electron acceptors and all other soil diagenesis processes of a theoretical layered wetland soil
+</p>
+</div>
+<p>So the first thing in the code is its name. It then becomes possible to reference the figure using <code>Figure \@ref(fig:diagenesis-diffusion-directions)</code> to say: look at the cool stuff in Figure <a href="code-chunks.html#fig:diagenesis-diffusion-directions">4.1</a>. Then, there are other settings for the code, which are detailed below. The figure caption is announced with the <code>fig.cap=</code>.</p>
+</div>
+<div id="inserting-several-pictures" class="section level2">
+<h2><span class="header-section-number">4.2</span> Inserting several pictures</h2>
+<p>It is also possible to insert several pictures lined up using this code:</p>
+<pre><code>```{r "brickwall", echo=FALSE, out.width = '40%', fig.show = 'hold', fig.align = 'center', fig.cap="Small and large structures can be built from the addition of bricks, one at a time"}
+knitr::include_graphics(c("pictures/brickwall.png","pictures/brick-skyscraper.jpg"))
+```</code></pre>
+<p>which yields:</p>
+<div class="figure" style="text-align: center"><span id="fig:brickwall"></span>
+<img src="pictures/brickwall.png" alt="Small and large structures can be built from the addition of bricks, one at a time" width="40%" /><img src="pictures/brick-skyscraper.jpg" alt="Small and large structures can be built from the addition of bricks, one at a time" width="40%" />
+<p class="caption">
+Figure 4.2: Small and large structures can be built from the addition of bricks, one at a time
+</p>
+</div>
+</div>
+<div id="inserting-videos" class="section level2">
+<h2><span class="header-section-number">4.3</span> Inserting videos</h2>
+<p>Similarly, it is possible to insert videos from the web using this code:</p>
+<pre><code>```{r "ATPaseRotation", echo=FALSE, out.width = '80%', fig.align = 'center', fig.cap="ATP synthase in action. Obtained with permission from HarvardX"}
+knitr::include_url("https://www.youtube.com/embed/kXpzp4RDGJI")
+```</code></pre>
+<p>which yields:</p>
+<div class="figure" style="text-align: center"><span id="fig:ATPaseRotation"></span>
+<iframe src="https://www.youtube.com/embed/kXpzp4RDGJI" width="80%" height="400px">
+</iframe>
+<p class="caption">
+Figure 4.3: ATP synthase in action. Obtained with permission from HarvardX
+</p>
+</div>
+</div>
+<div id="inserting-r-code" class="section level2">
+<h2><span class="header-section-number">4.4</span> Inserting R code</h2>
+<p>And obviously, a nice thing about <code>R markdown</code> is to be able to insert <code>R</code> code chunks like the one below to make some pretty complicated figures (the one here is not that much, and is not particularly well written…)</p>
+<pre><code>```{r "molarfracPO4", echo=FALSE, out.width = '85%', fig.align = 'center', fig.cap="Molar fraction for the conjugate acid forms of the triprotic phosphoric acid in dilute solutions at 25°C"}
+pKa=c(2.12,7.21,12.67)
+forms=c("H3PO4","H2PO4","HPO4","PO4")
+
+#if (length(forms)=4){
+pH<-seq(0,14,by=0.01)
+denominator= 10^(-3*pH)+ 10^(-pKa[1])*10^(-2*pH)+10^(-pKa[1])*10^(-pKa[2])*10^(-pH)+ 10^(-pKa[1])*10^(-pKa[2])*10^(-pKa[3])
+alpha0=10^(-3*pH)/denominator
+alpha1=(10^(-2*pH)*10^(-pKa[1]))/denominator
+alpha2=(10^(-pH)*10^(-pKa[1])*10^(-pKa[2]))/denominator
+alpha3=10^(-pKa[1])*10^(-pKa[2])*10^(-pKa[3])/denominator
+
+couleur=c("darkgreen","blue","orange","red","black")
+Ylim<-c(0,1.2)
+Xlim<-c(0,14)
+plot(0,0,xlim=Xlim,ylim=Ylim,col="white",main="",xlab="",ylab="",bty="n",xaxt="n",yaxt="n")
+abline(h=0,lwd=2,col="grey")
+par(new=TRUE)
+abline(h=seq(0,1,by=0.1),lty=3,col="grey")
+abline(h=1,lty=1,lwd=1,col="grey")
+abline(v=seq(0,14,by=1),lty=3,col="grey")
+par(new=TRUE)
+
+   plot(pH,alpha0,xlim=Xlim,ylim=Ylim,lty=1,lwd=2,type="l",xlab="pH",ylab="alpha",yaxt="n",col=couleur[1])
+   par(new=TRUE)
+   plot(pH,alpha1,xlim=Xlim,ylim=Ylim,lty=1,lwd=2,type="l",xlab="",ylab="",xaxt="n",yaxt="n",col=couleur[2])
+   par(new=TRUE)
+   plot(pH,alpha2,xlim=Xlim,ylim=Ylim,lty=1,lwd=2,type="l",xlab="",ylab="",xaxt="n",yaxt="n",col=couleur[3])
+   par(new=TRUE)
+   plot(pH,alpha3,xlim=Xlim,ylim=Ylim,lty=1,lwd=2,type="l",xlab="",ylab="",xaxt="n",yaxt="n",col=couleur[4])
+   axis(2,,at=c(0,0.2,0.4,0.6,0.8,1),labels=c("0","0.2","0.4","0.6","0.8","1"),cex.axis=1)
+   par(new=TRUE)
+   text(1,1.1,expression(paste(H[3],PO[4])),cex=1.2,col=couleur[1])
+   par(new=TRUE)
+   text((pKa[2]-pKa[1])/2+pKa[1],1.1,substitute(paste(H[x],PO[y]^{z}),list(x=2,y=4,z="-")),adj=0.5,cex=1.2,col=couleur[2])
+   par(new=TRUE)
+   text((pKa[3]-pKa[2])/2+pKa[2],1.1,substitute(paste(HPO[y]^{z}),list(y=4,z="2-")),cex=1.2,adj=0.5,col=couleur[3])
+   par(new=TRUE)
+   text(14,1.1,substitute(paste(PO[y]^{z}),list(y=4,z="3-")),adj=1,cex=1.2,col=couleur[4])
+```</code></pre>
+<p>which yields:</p>
+<div class="figure" style="text-align: center"><span id="fig:molarfracPO4"></span>
+<img src="bookdown-demo_files/figure-html/molarfracPO4-1.png" alt="Molar fraction for the conjugate acid forms of the triprotic phosphoric acid in dilute solutions at 25°C" width="85%" />
+<p class="caption">
+Figure 4.4: Molar fraction for the conjugate acid forms of the triprotic phosphoric acid in dilute solutions at 25°C
+</p>
+</div>
+</div>
+<div id="inserting-tables" class="section level2">
+<h2><span class="header-section-number">4.5</span> Inserting tables</h2>
+<p>To me, this is where Rmarkdown is the weakest for now. Tables are not that easy to handle… Here is a Chunk code that works with <code>pander</code>. I had to use this because otherwise, it would not render the equations well, but it does not have a caption, which is what I was trying to have anyway.</p>
+<pre><code>```{r "EqKH2O", echo=FALSE, warning=FALSE, eval=TRUE}
+EquiK<-read.csv("EqKH2O.csv", header = TRUE)
+
+library(pander)
+panderOptions('keep.trailing.zeros', TRUE)
+pander(EquiK, style = "rmarkdown", split.table = Inf,
+       col.names = c("Equilibrium reactions","Log K"))
+```</code></pre>
+<p></br></br></p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Equilibrium reactions</th>
+<th align="center">Log K</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">H<sup>+</sup> + OH<sup>-</sup> ⇆ H<sub>2</sub>O</td>
+<td align="center">-14.00</td>
+</tr>
+<tr class="even">
+<td align="center">H<sup>+</sup> + e<sup>-</sup> ⇆ H<sub>2(g)</sub></td>
+<td align="center">0.00</td>
+</tr>
+<tr class="odd">
+<td align="center">H<sup>+</sup> + e<sup>-</sup> + ¼O<sub>2(g)</sub> ⇆ ½H<sub>2</sub>O</td>
+<td align="center">20.78</td>
+</tr>
+</tbody>
+</table>
+<p>There is another package which I like in many ways, but it is still imperfect: <code>KableExtra</code>. In the code below, it is possible to insert picture with text.</p>
+<pre><code>```{r "ElecAllocTab", echo=FALSE, warning=FALSE}
+elecalloc<-read.csv("ElecAlloc1.csv", header = TRUE)
+library(kableExtra)
+knitr::kable(elecalloc, align = "c", "html",
+             caption = 'Examples of electron allocations on the C, N, S, and P atoms generating different inorganic and organic molecules relevant to environmental and ecological engineering',
+             col.names = c("Nb of e^-^ stored on the atoms","C","N","S","P")) %>%
+      kable_styling(full_width = F) %>%
+  column_spec(1, bold = T, border_right = T, width = "5em") %>%
+  column_spec(2, width = "15em") %>%
+  column_spec(3, width = "10em") %>%
+  column_spec(4, width = "10em") %>%
+  column_spec(5, width = "10em", border_right = T) %>%
+  row_spec(1:9, background = "white")
+```</code></pre>
+<p>The beauty is that I was able to get the caption here and this is very useful. I suppose that for most applications, <code>KableExtra</code> is still the best thing outthere. Again, to reference the table, use <code>\@ref(tab:ElecAllocTab)</code> to say that table <a href="code-chunks.html#tab:ElecAllocTab">4.1</a> is very messy!!</p>
+<p></br></p>
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:ElecAllocTab">Table 4.1: </span>Examples of electron allocations on the C, N, S, and P atoms generating different inorganic and organic molecules relevant to environmental and ecological engineering
+</caption>
+<thead>
+<tr>
+<th style="text-align:center;">
+Nb of e<sup>-</sup> stored on the atoms
+</th>
+<th style="text-align:center;">
+C
+</th>
+<th style="text-align:center;">
+N
+</th>
+<th style="text-align:center;">
+S
+</th>
+<th style="text-align:center;">
+P
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;width: 5em; font-weight: bold;border-right:1px solid;background-color: white;">
+0
+</td>
+<td style="text-align:center;width: 15em; background-color: white;">
+carbon dioxide <img src="pictures/ElecAlloc_CO2.png" />
+</td>
+<td style="text-align:center;width: 10em; background-color: white;">
+nitr<em><strong>ate</strong></em> <img src="pictures/ElecAlloc_NO3-.png" />
+</td>
+<td style="text-align:center;width: 10em; background-color: white;">
+sulf<em><strong>ate</strong></em> <img src="pictures/ElecAlloc_SO42-.png" />
+</td>
+<td style="text-align:center;width: 10em; border-right:1px solid;background-color: white;">
+phosph<em><strong>ate</strong></em> <img src="pictures/ElecAlloc_PO43-.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:center;width: 5em; font-weight: bold;border-right:1px solid;background-color: white;">
+1
+</td>
+<td style="text-align:center;width: 15em; background-color: white;">
+C#1 pyruvic acid <img src="pictures/ElecAlloc_pyruvic_acid.png" />
+</td>
+<td style="text-align:center;width: 10em; background-color: white;">
+</td>
+<td style="text-align:center;width: 10em; background-color: white;">
+</td>
+<td style="text-align:center;width: 10em; border-right:1px solid;background-color: white;">
+</td>
+</tr>
+<tr>
+<td style="text-align:center;width: 5em; font-weight: bold;border-right:1px solid;background-color: white;">
+2
+</td>
+<td style="text-align:center;width: 15em; background-color: white;">
+C#2 pyruvic acid <img src="pictures/ElecAlloc_pyruvic_acid.png" /> carbon monoxide <img src="pictures/ElecAlloc_CO.png" style="width:70.0%" />
+</td>
+<td style="text-align:center;width: 10em; background-color: white;">
+nitr<em><strong>ite</strong></em> <img src="pictures/ElecAlloc_NO2-.png" />
+</td>
+<td style="text-align:center;width: 10em; background-color: white;">
+sulf<em><strong>ite</strong></em> <img src="pictures/ElecAlloc_SO32-.png" /> sulfur dioxide  <img src="pictures/ElecAlloc_SO2.png" />
+</td>
+<td style="text-align:center;width: 10em; border-right:1px solid;background-color: white;">
+</td>
+</tr>
+<tr>
+<td style="text-align:center;width: 5em; font-weight: bold;border-right:1px solid;background-color: white;">
+3
+</td>
+<td style="text-align:center;width: 15em; background-color: white;">
+C#1 of glucose <img src="pictures/ElecAlloc_glucose.png" />
+</td>
+<td style="text-align:center;width: 10em; background-color: white;">
+N#2 of nitrous oxide <img src="pictures/ElecAlloc_N2O.png" />
+</td>
+<td style="text-align:center;width: 10em; background-color: white;">
+</td>
+<td style="text-align:center;width: 10em; border-right:1px solid;background-color: white;">
+</td>
+</tr>
+<tr>
+<td style="text-align:center;width: 5em; font-weight: bold;border-right:1px solid;background-color: white;">
+4
+</td>
+<td style="text-align:center;width: 15em; background-color: white;">
+C#2 to C#5 of glucose <img src="pictures/ElecAlloc_glucose.png" />
+</td>
+<td style="text-align:center;width: 10em; background-color: white;">
+</td>
+<td style="text-align:center;width: 10em; background-color: white;">
+</td>
+<td style="text-align:center;width: 10em; border-right:1px solid;background-color: white;">
+</td>
+</tr>
+<tr>
+<td style="text-align:center;width: 5em; font-weight: bold;border-right:1px solid;background-color: white;">
+5
+</td>
+<td style="text-align:center;width: 15em; background-color: white;">
+C#6 of glucose <img src="pictures/ElecAlloc_glucose.png" />
+</td>
+<td style="text-align:center;width: 10em; background-color: white;">
+dinitrogen <img src="pictures/ElecAlloc_N2.png" /> nitrogen monoxide <img src="pictures/ElecAlloc_NO.png" /> N#1 of nitrous oxide <img src="pictures/ElecAlloc_N2O.png" />
+</td>
+<td style="text-align:center;width: 10em; background-color: white;">
+</td>
+<td style="text-align:center;width: 10em; border-right:1px solid;background-color: white;">
+</td>
+</tr>
+<tr>
+<td style="text-align:center;width: 5em; font-weight: bold;border-right:1px solid;background-color: white;">
+6
+</td>
+<td style="text-align:center;width: 15em; background-color: white;">
+C of fatty acid <img src="pictures/ElecAlloc_fatty_acid.png" style="width:70.0%" />
+</td>
+<td style="text-align:center;width: 10em; background-color: white;">
+</td>
+<td style="text-align:center;width: 10em; background-color: white;">
+</td>
+<td style="text-align:center;width: 10em; border-right:1px solid;background-color: white;">
+</td>
+</tr>
+<tr>
+<td style="text-align:center;width: 5em; font-weight: bold;border-right:1px solid;background-color: white;">
+7
+</td>
+<td style="text-align:center;width: 15em; background-color: white;">
+pyruvic acid (C#3) <img src="pictures/ElecAlloc_pyruvic_acid.png" />
+</td>
+<td style="text-align:center;width: 10em; background-color: white;">
+</td>
+<td style="text-align:center;width: 10em; background-color: white;">
+</td>
+<td style="text-align:center;width: 10em; border-right:1px solid;background-color: white;">
+</td>
+</tr>
+<tr>
+<td style="text-align:center;width: 5em; font-weight: bold;border-right:1px solid;background-color: white;">
+8
+</td>
+<td style="text-align:center;width: 15em; background-color: white;">
+methane <img src="pictures/ElecAlloc_CH4.png" style="width:70.0%" />
+</td>
+<td style="text-align:center;width: 10em; background-color: white;">
+ammonium <img src="pictures/ElecAlloc_NH4+.png" /> ammonia <img src="pictures/ElecAlloc_NH3.png" style="width:70.0%" /> amine groups in amino-acids <img src="pictures/ElecAlloc_cysteine.png" />
+</td>
+<td style="text-align:center;width: 10em; background-color: white;">
+dihydrogen sulfide <img src="pictures/ElecAlloc_H2S.png" /> hydrogen sulfide <img src="pictures/ElecAlloc_HS-.png" /> sulfide <img src="pictures/ElecAlloc_S2-.png" /> thiol groups in organic molecules <img src="pictures/ElecAlloc_cysteine.png" />
+</td>
+<td style="text-align:center;width: 10em; border-right:1px solid;background-color: white;">
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="other-important-things-about-code-chunks" class="section level2">
+<h2><span class="header-section-number">4.6</span> Other important things about code chunks</h2>
+<p>Code chunks (but not inline code) can take a lot of <strong>options</strong> which modify how they are run, and how they appear in the document. These options go after the initial <code>r</code> and before the closing <code>}</code> that announces the start of a code chunk. One of the most common options turns off printing out the code, but leaves the results alone: <code>```{r, echo=FALSE}</code> <br/> Another runs the code, but includes neither the text of the code nor its output. <code>```{r, include=FALSE}</code> This might seem pointless, but it can be useful for code chunks which do set-up like loading data files, or initial model estimates, etc.</p>
+<p><br/> Another option prints the code in the document, but does not run it: <code>```{r, eval=FALSE}</code> This is useful if you want to talk about the (nicely formatted) code. <br/> Another option on the results of the code is that it generate all results “as-is”, which is very nice when your code generates mark-up text to be rendered by <code>Pandoc</code>.</p>
+<p><code>```{r, results=&quot;asis&quot;}</code> <br/> By default, the results of a chunk with have <code>##</code> as a prefix. You can remove this by putting</p>
+<p><code>```{r, comment=FALSE}</code></p>
+<p><br/> Sometimes, running of the code will generate warnings and messages. These can be turned off in the output by using</p>
+<p><code>```{r, warning=FALSE, message = FALSE}</code></p>
+</div>
+<div id="naming-chunks" class="section level2">
+<h2><span class="header-section-number">4.7</span> Naming Chunks</h2>
+<p>You can give chunks names immediately after their opening, like <code>```{r, clevername}</code>. This name is then used for the images (or other files) that are generated when the document is rendered.</p>
+</div>
+<div id="adjusting-figure-sizes-and-alignments" class="section level2">
+<h2><span class="header-section-number">4.8</span> Adjusting figure sizes and alignments</h2>
+<p>These details are discussed in the accompanying written article on instantaneous vs. interval-average flow data.</p>
+<div id="caching-code-chunks-re-running-only-when-changed" class="section level4">
+<h4><span class="header-section-number">4.8.0.1</span> “Caching” Code Chunks (Re-Running Only When Changed)</h4>
+<p>By default, R Markdown will re-run all of your code every time you render your document. If some of your code is slow, this can add up to a lot of time. You can, however, ask R Markdown to keep track of whether a chunk of code has changed, and only re-run it if it has. This is called <strong>caching</strong> the chunk.</p>
+<pre><code>```{r, cache=TRUE}
+summary(cars)
+```</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">summary</span>(cars)</code></pre></div>
+<pre><code>##      speed           dist       
+##  Min.   : 4.0   Min.   :  2.00  
+##  1st Qu.:12.0   1st Qu.: 26.00  
+##  Median :15.0   Median : 36.00  
+##  Mean   :15.4   Mean   : 42.98  
+##  3rd Qu.:19.0   3rd Qu.: 56.00  
+##  Max.   :25.0   Max.   :120.00</code></pre>
+<p>One issue is that a chunk of code which hasn’t changed itself might call on results of earlier, modified chunks, and then we <em>would</em> want to re-run the downstream chunks. There are options for manually telling R Markdown “this chunk depends on this earlier chunk”, but it’s generally easier to let it take care of that, by setting the <code>autodep=TRUE</code> option.</p>
+<ol style="list-style-type: decimal">
+<li>If you load a package with the <code>library()</code> command, R Markdown isn’t smart enough to check whether the package has changed (or indeed been installed, if you were missing it). So that won’t trigger an automatic re-running of a cached code chunk.</li>
+<li>To manually force re-running all code chunks, the easiest thing to do is to delete the directory R Markdown will create (named something like <em>filename</em><code>_cache</code>) which it uses to store the state of all code chunks.</li>
+</ol>
+<p><br/></p>
+</div>
+<div id="setting-defaults-for-all-chunks" class="section level4">
+<h4><span class="header-section-number">4.8.0.2</span> Setting Defaults for All Chunks</h4>
+<p>You can tell R to set some defaults to apply to all chunks where you don’t specifically over-ride them. Here are the ones I generally use:</p>
+<pre><code>```{r, eval=FALSE}
+# Need the knitr package to set chunk options
+library(knitr)
+
+# Set knitr options for knitting code into the report:
+# - Don't print out code (echo)
+# - Save results so that code blocks aren't re-run unless code changes (cache),
+# _or_ a relevant earlier code block changed (autodep), but don't re-run if the
+# only thing that changed was the comments (cache.comments)
+# - show the error messages (message)
+# - Don't clutter R output with warnings (warning)
+# This _will_ leave error messages showing up in the knitted report
+opts_chunk$set(echo=FALSE,
+               cache=TRUE, autodep=TRUE, cache.comments=FALSE,
+               message=TRUE, warning=FALSE)
+```</code></pre>
+<p>This sets some additional options beyond the ones I’ve discussed, like not re-running a chunk if only the comments have changed (<code>cache.comments = FALSE</code>), and leaving out messages and warnings. (I’d only recommend suppressing warnings once you’re sure your code is in good shape.) I would typically give this set-up chunk itself the option <code>include=FALSE</code>.</p>
+<p>You can over-ride these defaults by setting options for individual chunks.</p>
+<p><br/></p>
+</div>
+<div id="more-chunk-options" class="section level4">
+<h4><span class="header-section-number">4.8.0.3</span> More Chunk options</h4>
+<p>See [<a href="http://yihui.name/knitr/options/" class="uri">http://yihui.name/knitr/options/</a>] for a complete listing of possible chunk options.</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="editing-equations-in-r-markdown.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="referencing-and-cited-references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/03-Code-chunks.Rmd",
+"text": "Edit"
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

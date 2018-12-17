@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>A BAE Book Example</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook.">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="A BAE Book Example" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="A BAE Book Example" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+<meta name="author" content="BAE Faculty">
+
+
+<meta name="date" content="2018-12-17">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="index.html">
+<link rel="next" href="editing-equations-in-r-markdown.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction: Text features</a><ul>
+<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#paragraph-breaks-and-forced-line-breaks"><i class="fa fa-check"></i><b>2.1</b> Paragraph Breaks and Forced Line Breaks</a></li>
+<li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#headers"><i class="fa fa-check"></i><b>2.2</b> Headers</a></li>
+<li class="chapter" data-level="2.3" data-path="intro.html"><a href="intro.html#italics-and-bold"><i class="fa fa-check"></i><b>2.3</b> Italics and bold</a></li>
+<li class="chapter" data-level="2.4" data-path="intro.html"><a href="intro.html#supbscripts-and-superscripts"><i class="fa fa-check"></i><b>2.4</b> Supbscripts and superscripts</a></li>
+<li class="chapter" data-level="2.5" data-path="intro.html"><a href="intro.html#lists"><i class="fa fa-check"></i><b>2.5</b> Lists</a></li>
+<li class="chapter" data-level="2.6" data-path="intro.html"><a href="intro.html#quotations"><i class="fa fa-check"></i><b>2.6</b> Quotations</a></li>
+<li class="chapter" data-level="2.7" data-path="intro.html"><a href="intro.html#computer-type"><i class="fa fa-check"></i><b>2.7</b> Computer type</a></li>
+<li class="chapter" data-level="2.8" data-path="intro.html"><a href="intro.html#symbols-and-special-characters"><i class="fa fa-check"></i><b>2.8</b> Symbols and Special characters</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="editing-equations-in-r-markdown.html"><a href="editing-equations-in-r-markdown.html"><i class="fa fa-check"></i><b>3</b> Editing equations in R Markdown</a><ul>
+<li class="chapter" data-level="3.1" data-path="editing-equations-in-r-markdown.html"><a href="editing-equations-in-r-markdown.html#inline-equations"><i class="fa fa-check"></i><b>3.1</b> Inline equations</a></li>
+<li class="chapter" data-level="3.2" data-path="editing-equations-in-r-markdown.html"><a href="editing-equations-in-r-markdown.html#set-off-equations"><i class="fa fa-check"></i><b>3.2</b> Set off equations</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="code-chunks.html"><a href="code-chunks.html"><i class="fa fa-check"></i><b>4</b> Code chunks</a><ul>
+<li class="chapter" data-level="4.1" data-path="code-chunks.html"><a href="code-chunks.html#inserting-pictures"><i class="fa fa-check"></i><b>4.1</b> Inserting pictures</a></li>
+<li class="chapter" data-level="4.2" data-path="code-chunks.html"><a href="code-chunks.html#inserting-several-pictures"><i class="fa fa-check"></i><b>4.2</b> Inserting several pictures</a></li>
+<li class="chapter" data-level="4.3" data-path="code-chunks.html"><a href="code-chunks.html#inserting-videos"><i class="fa fa-check"></i><b>4.3</b> Inserting videos</a></li>
+<li class="chapter" data-level="4.4" data-path="code-chunks.html"><a href="code-chunks.html#inserting-r-code"><i class="fa fa-check"></i><b>4.4</b> Inserting R code</a></li>
+<li class="chapter" data-level="4.5" data-path="code-chunks.html"><a href="code-chunks.html#inserting-tables"><i class="fa fa-check"></i><b>4.5</b> Inserting tables</a></li>
+<li class="chapter" data-level="4.6" data-path="code-chunks.html"><a href="code-chunks.html#other-important-things-about-code-chunks"><i class="fa fa-check"></i><b>4.6</b> Other important things about code chunks</a></li>
+<li class="chapter" data-level="4.7" data-path="code-chunks.html"><a href="code-chunks.html#naming-chunks"><i class="fa fa-check"></i><b>4.7</b> Naming Chunks</a></li>
+<li class="chapter" data-level="4.8" data-path="code-chunks.html"><a href="code-chunks.html#adjusting-figure-sizes-and-alignments"><i class="fa fa-check"></i><b>4.8</b> Adjusting figure sizes and alignments</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="referencing-and-cited-references.html"><a href="referencing-and-cited-references.html"><i class="fa fa-check"></i><b>5</b> Referencing and Cited References</a><ul>
+<li class="chapter" data-level="5.1" data-path="referencing-and-cited-references.html"><a href="referencing-and-cited-references.html#autoreferencing"><i class="fa fa-check"></i><b>5.1</b> Autoreferencing</a></li>
+<li class="chapter" data-level="5.2" data-path="referencing-and-cited-references.html"><a href="referencing-and-cited-references.html#cited-references"><i class="fa fa-check"></i><b>5.2</b> Cited references</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="referencing-and-cited-references.html"><a href="referencing-and-cited-references.html#link-to-citations"><i class="fa fa-check"></i><b>5.2.1</b> Link to citations</a></li>
+<li class="chapter" data-level="5.2.2" data-path="referencing-and-cited-references.html"><a href="referencing-and-cited-references.html#csl-and-styling-of-citations"><i class="fa fa-check"></i><b>5.2.2</b> CSL and styling of citations</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>6</b> Final words</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A BAE Book Example</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="intro" class="section level1">
+<h1><span class="header-section-number">Chapter 2</span> Introduction: Text features</h1>
+<p>The markdown syntax is very simple and this is one of the reasons why it is so attractive. You can find all the syntax with <a href="https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf">this R Markdown reference document</a>, but I thought I would go through them as I have learned several tricks I could not easily find in the document.</p>
+<p><br/></p>
+<div id="paragraph-breaks-and-forced-line-breaks" class="section level2">
+<h2><span class="header-section-number">2.1</span> Paragraph Breaks and Forced Line Breaks</h2>
+<p>To insert a break between paragraphs, include a single completely blank line.</p>
+<p>To force a line break, put <em>two</em> blank spaces at the end of a line.</p>
+<pre><code>To insert a break between paragraphs, include a single completely blank line.
+
+To force a line break, put _two_ blank spaces at the end of a line.</code></pre>
+<p><br/></p>
+</div>
+<div id="headers" class="section level2">
+<h2><span class="header-section-number">2.2</span> Headers</h2>
+<p>The character <code>#</code> at the beginning of a line means that the rest of the line is interpreted as a section header. The number of <code>#</code>s at the beginning of the line indicates the level of the section (1,2,3, etc.). For instance, <code>Components of R Markdown</code> above is preceded by a single <code>#</code>, because it is of level 1 but <code>Headers</code> at the start of this paragraph is preceded by <code>###</code> because it is of level 3. Up to six levels are understood by Markdown. Do not interrupt these headers by line-breaks. Make sure that in your .Rmd file, you leave a blank line before a header, otherwise, <code>pandoc</code> will not render it as a header.</p>
+<p><br/></p>
+</div>
+<div id="italics-and-bold" class="section level2">
+<h2><span class="header-section-number">2.3</span> Italics and bold</h2>
+<pre><code>*italics* and _italics_</code></pre>
+<p>renders <em>italics</em> and <em>italics</em></p>
+<pre><code>**bold** and __bold__</code></pre>
+<p>renders <strong>bold</strong> and <strong>bold</strong></p>
+<p><br/></p>
+</div>
+<div id="supbscripts-and-superscripts" class="section level2">
+<h2><span class="header-section-number">2.4</span> Supbscripts and superscripts</h2>
+<p>To write sub- and superscripts, like in NO<sub>3</sub><sup>-</sup> or PO<sub>4</sub><sup>3-</sup> write as</p>
+<pre><code>NO~3~^-^ or PO~4~^3-^</code></pre>
+<p>PO<sub>4</sub><sup>3-</sup> does not look as neat as <span class="math inline">\(PO_4^{3-}\)</span></p>
+<pre><code>PO~4~^3-^ does not look as neat as $PO_4^{3-}$</code></pre>
+<p>but looks more seamless in a normal text because the former does not appear as an <a href="editing-equations-in-r-markdown.html#inline-equations">equation</a> while the other does.</p>
+<p><br/></p>
+</div>
+<div id="lists" class="section level2">
+<h2><span class="header-section-number">2.5</span> Lists</h2>
+<pre><code>* unordered list
+* item 2
+    + sub-item 1                #4 &lt;spaces&gt; before +
+    + sub-item 2                #4 &lt;spaces&gt; before +</code></pre>
+<ul>
+<li>unordered list</li>
+<li>item 2
+<ul>
+<li>sub-item 1</li>
+<li>sub-item 2</li>
+</ul></li>
+</ul>
+<pre><code>1. ordered list
+2. item 2
+    + sub-item 1                #4 &lt;spaces&gt; before +
+    + sub-item 2                #4 &lt;spaces&gt; before +</code></pre>
+<ol style="list-style-type: decimal">
+<li>ordered list</li>
+<li>item 2
+<ul>
+<li>sub-item 1</li>
+<li>sub-item 2</li>
+</ul></li>
+</ol>
+<p>In the ordered list, there is a subtlety unrevealed in the Rmardown documentation, which is that the numbering <em>always</em> increases, and that <em>only</em> the number value of the first item matters. So, one cannot have a list in a decreasing order (which is too bad because when one makes a list of his/her publications, it is nice to have a decreasing order…), and the only number that matters is the first one. So this code <br/></p>
+<pre><code>5. ordered list
+7. item 2
+2. item 2
+                                # blank line for list to take into effect
+    b. sub-item 1               #4 &lt;spaces&gt; before b
+    a. sub-item 2  </code></pre>
+<p><br/> renders this:</p>
+<ol start="5" style="list-style-type: decimal">
+<li>ordered list</li>
+<li>item 2</li>
+<li><p>item 2</p>
+<ol start="2" style="list-style-type: lower-alpha">
+<li>sub-item 1<br />
+</li>
+<li>sub-item 2</li>
+</ol></li>
+</ol>
+<p><br/></p>
+</div>
+<div id="quotations" class="section level2">
+<h2><span class="header-section-number">2.6</span> Quotations</h2>
+<blockquote>
+<p>R Markdown is, in particular, both “free as in beer” (you will never pay a dollar for software to use it) and “free as in speech” (the specification is completely open to all to inspect).</p>
+</blockquote>
+<p>Is a quotation from <a href="http://www.stat.cmu.edu/~cshalizi/rmarkdown/">Dr Shalizi</a> which code starts with a <code>&gt;</code></p>
+<pre><code>&gt; R Markdown is, in particular, both &quot;free as in beer&quot; etc.</code></pre>
+<p><br/></p>
+</div>
+<div id="computer-type" class="section level2">
+<h2><span class="header-section-number">2.7</span> Computer type</h2>
+<p>This is to differentiate regular text from <code>code text</code> so that both can be easily differentiated: <code>R</code> vs R.</p>
+<pre><code>This is to differentiate regular text from `code text` so that both can be easily differentiated: `R` vs R.</code></pre>
+<p>An entire paragraph of code which is rendered as a “code box” in html (but not in pdf) starts with three “back-ticks”, and end the same</p>
+<p><br/> <a id="link_ref"></a></p>
+</div>
+<div id="symbols-and-special-characters" class="section level2">
+<h2><span class="header-section-number">2.8</span> Symbols and Special characters</h2>
+<p>The principal keys, like the alphabet, are understood univocally across platforms such as Windows, Mac OS, or Linux. However, there are special characters such °, ² or µ that have different embedded codes across the different platforms. For example, if you and your co-worker work on the same document and one works using Windows and the other uses Mac, the actual symbol in the code text may not show the same one from one to the other plateform.</p>
+<p>For example, if I write in an R markdown document “10 m²” and I have added the ² symbol by typing on a PC “Alt+0178”, as this corresponds to the ascii code for ² in Windows, the same document open on a Mac will render “10 m?”, because it cannot interpret the embedded code for ²…</p>
+<p>Several consequences:</p>
+<ol style="list-style-type: decimal">
+<li><strong>NEVER</strong> use special characters in variable names in an <code>R</code> code,</li>
+<li>in an R markdown document, use the HTML Number or HTML name in the text</li>
+</ol>
+<p><a href="https://www.ascii.cl/htmlcodes.htm">HTML Number and Names</a> can be found on this <a href="https://www.ascii.cl/htmlcodes.htm">ascii page</a> or on this page for <a href="http://www.dionysia.org/html/entities/symbols.html">greek letter codes and some other symbols</a></p>
+<p>So to type T°C, m², µm, or pε you type like this</p>
+<pre><code>So to type T&amp;deg;C, m&amp;sup2;, &amp;micro;m, or p&amp;epsilon; you type like this</code></pre>
+<p>Do not forget to add the “;” !!! <br/><br/><br/></p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="editing-equations-in-r-markdown.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/01-introTextFeatures.Rmd",
+"text": "Edit"
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

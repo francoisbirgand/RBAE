@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>A BAE Book Example</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook.">
+  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+
+  <meta property="og:title" content="A BAE Book Example" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="A BAE Book Example" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+<meta name="author" content="BAE Faculty">
+
+
+<meta name="date" content="2018-12-17">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="code-chunks.html">
+<link rel="next" href="final-words.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction: Text features</a><ul>
+<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#paragraph-breaks-and-forced-line-breaks"><i class="fa fa-check"></i><b>2.1</b> Paragraph Breaks and Forced Line Breaks</a></li>
+<li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#headers"><i class="fa fa-check"></i><b>2.2</b> Headers</a></li>
+<li class="chapter" data-level="2.3" data-path="intro.html"><a href="intro.html#italics-and-bold"><i class="fa fa-check"></i><b>2.3</b> Italics and bold</a></li>
+<li class="chapter" data-level="2.4" data-path="intro.html"><a href="intro.html#supbscripts-and-superscripts"><i class="fa fa-check"></i><b>2.4</b> Supbscripts and superscripts</a></li>
+<li class="chapter" data-level="2.5" data-path="intro.html"><a href="intro.html#lists"><i class="fa fa-check"></i><b>2.5</b> Lists</a></li>
+<li class="chapter" data-level="2.6" data-path="intro.html"><a href="intro.html#quotations"><i class="fa fa-check"></i><b>2.6</b> Quotations</a></li>
+<li class="chapter" data-level="2.7" data-path="intro.html"><a href="intro.html#computer-type"><i class="fa fa-check"></i><b>2.7</b> Computer type</a></li>
+<li class="chapter" data-level="2.8" data-path="intro.html"><a href="intro.html#symbols-and-special-characters"><i class="fa fa-check"></i><b>2.8</b> Symbols and Special characters</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="editing-equations-in-r-markdown.html"><a href="editing-equations-in-r-markdown.html"><i class="fa fa-check"></i><b>3</b> Editing equations in R Markdown</a><ul>
+<li class="chapter" data-level="3.1" data-path="editing-equations-in-r-markdown.html"><a href="editing-equations-in-r-markdown.html#inline-equations"><i class="fa fa-check"></i><b>3.1</b> Inline equations</a></li>
+<li class="chapter" data-level="3.2" data-path="editing-equations-in-r-markdown.html"><a href="editing-equations-in-r-markdown.html#set-off-equations"><i class="fa fa-check"></i><b>3.2</b> Set off equations</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="code-chunks.html"><a href="code-chunks.html"><i class="fa fa-check"></i><b>4</b> Code chunks</a><ul>
+<li class="chapter" data-level="4.1" data-path="code-chunks.html"><a href="code-chunks.html#inserting-pictures"><i class="fa fa-check"></i><b>4.1</b> Inserting pictures</a></li>
+<li class="chapter" data-level="4.2" data-path="code-chunks.html"><a href="code-chunks.html#inserting-several-pictures"><i class="fa fa-check"></i><b>4.2</b> Inserting several pictures</a></li>
+<li class="chapter" data-level="4.3" data-path="code-chunks.html"><a href="code-chunks.html#inserting-videos"><i class="fa fa-check"></i><b>4.3</b> Inserting videos</a></li>
+<li class="chapter" data-level="4.4" data-path="code-chunks.html"><a href="code-chunks.html#inserting-r-code"><i class="fa fa-check"></i><b>4.4</b> Inserting R code</a></li>
+<li class="chapter" data-level="4.5" data-path="code-chunks.html"><a href="code-chunks.html#inserting-tables"><i class="fa fa-check"></i><b>4.5</b> Inserting tables</a></li>
+<li class="chapter" data-level="4.6" data-path="code-chunks.html"><a href="code-chunks.html#other-important-things-about-code-chunks"><i class="fa fa-check"></i><b>4.6</b> Other important things about code chunks</a></li>
+<li class="chapter" data-level="4.7" data-path="code-chunks.html"><a href="code-chunks.html#naming-chunks"><i class="fa fa-check"></i><b>4.7</b> Naming Chunks</a></li>
+<li class="chapter" data-level="4.8" data-path="code-chunks.html"><a href="code-chunks.html#adjusting-figure-sizes-and-alignments"><i class="fa fa-check"></i><b>4.8</b> Adjusting figure sizes and alignments</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="referencing-and-cited-references.html"><a href="referencing-and-cited-references.html"><i class="fa fa-check"></i><b>5</b> Referencing and Cited References</a><ul>
+<li class="chapter" data-level="5.1" data-path="referencing-and-cited-references.html"><a href="referencing-and-cited-references.html#autoreferencing"><i class="fa fa-check"></i><b>5.1</b> Autoreferencing</a></li>
+<li class="chapter" data-level="5.2" data-path="referencing-and-cited-references.html"><a href="referencing-and-cited-references.html#cited-references"><i class="fa fa-check"></i><b>5.2</b> Cited references</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="referencing-and-cited-references.html"><a href="referencing-and-cited-references.html#link-to-citations"><i class="fa fa-check"></i><b>5.2.1</b> Link to citations</a></li>
+<li class="chapter" data-level="5.2.2" data-path="referencing-and-cited-references.html"><a href="referencing-and-cited-references.html#csl-and-styling-of-citations"><i class="fa fa-check"></i><b>5.2.2</b> CSL and styling of citations</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>6</b> Final words</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A BAE Book Example</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="referencing-and-cited-references" class="section level1">
+<h1><span class="header-section-number">Chapter 5</span> Referencing and Cited References</h1>
+<div id="autoreferencing" class="section level2">
+<h2><span class="header-section-number">5.1</span> Autoreferencing</h2>
+<p>The beauty of the system is that the referencing is all automatised.</p>
+<ul>
+<li>So to reference an equation use <code>\@ref(eq:HnApoly)</code> to obtain equation <a href="editing-equations-in-r-markdown.html#eq:HnApoly">(3.2)</a></li>
+<li>So to reference a figure use<code>\@ref(fig:molarfracPO4)</code> to obtain figure <a href="code-chunks.html#fig:molarfracPO4">4.4</a></li>
+<li>So to reference an table use<code>\@ref(tab:ElecAllocTab)</code> to obtain table <a href="code-chunks.html#tab:ElecAllocTab">4.1</a></li>
+</ul>
+</div>
+<div id="cited-references" class="section level2">
+<h2><span class="header-section-number">5.2</span> Cited references</h2>
+<p>I have created and maintained for over 15 years a database written in Microsoft Access of around 2000 articles, most of them photocopied and typed in the database by hand during and after my Ph.D. (yes, I should have a medal!…) but I have to admit that this system is past its time… I have now switched to Paperpile. There are many other referencing software out there now (<a href="https://en.wikipedia.org/wiki/Comparison_of_reference_management_software">a list and comparison can be found here</a>). The beauty of them is that they will all export in recognized formats and this is what we care about here. So no more copy/paste of references from some pdf. We are going into <em>reproducible research</em>. This means that all the articles you want to work with will be entered in the reference database of your choice. Make sure you start one ASAP!</p>
+<p>In the YAML header, you can now see <code>bibliography: [book.bib, packages.bib]</code>. This means that there are files named <code>book.bib</code> and <code>packages.bib</code> that are located in the same directory as the all the .Rmd files, which when we ‘knit’, <a href="https://pandoc.org/MANUAL.html">Pandoc</a> will look for. You can access these <code>.bib</code> file in the GitHub directory. There is actually a possibility to add within the <code>.Rmd</code> document itself, the text needed for Pandoc to read the references, but unless you only have very few references, this can become very messy quickly. See the <a href="http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html#bibliographies">RStudio Bibliographies documentation</a> for more details.</p>
+<p>In short, in this file, there is a list of articles which information is coded according to the format chosen. By the way, a lot of the details for the bibliography are available on the <a href="http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html#bibliographies">RStudio Bibliographies documentation</a>. R Markdown will recognize up to 10 different formats. The one Paperpile exports is <code>.bibtex</code>, so this is the one I have usually add in the YAML header. The filename extension will determine the <em>rendering</em> process, so make sure you have the right extension as well.</p>
+<p>So, in the <code>.bib</code> file I have, the first article appears as</p>
+<pre><code>@ARTICLE{Kuhne2009-tn,
+  title   = &quot;Improving the Traditional Information Management in Natural
+  Sciences&quot;,
+  author  = &quot;K{\&quot;u}hne, Martin and Liehr, Andreas W&quot;,
+  journal = &quot;Data Sci. J.&quot;,
+  volume  =  8,
+  pages   = &quot;18--26&quot;,
+  year    =  2009,
+  issn    = &quot;1683-1470, 0308-9541&quot;,
+  doi     = &quot;10.2481/dsj.8.18&quot;
+}</code></pre>
+<p>here is another reference <span class="citation">(Maxwell et al. <a href="#ref-Maxwell2018-ht">2018</a>)</span> or this website <span class="citation">(Wikipedia contributors <a href="#ref-Wikipedia_contributors2018-ia">2018</a>)</span></p>
+<p>The first item after “ARTICLE{” is the unique identifier for the article. The identifier of this article is <code>Kuhne2009-tn</code>. When one wants to cite this article, one will say something like “reproducible research has been suggested to become the norm <span class="citation">(Kühne and Liehr <a href="#ref-Kuhne2009-tn">2009</a>)</span>”. And you would code like</p>
+<pre><code>&quot;reproducible research has been suggested to become the norm [@Kuhne2009-tn]&quot;</code></pre>
+<p>If you want to say that “Kühne et al. <span class="citation">(<a href="#ref-Kuhne2009-tn">2009</a>)</span> have shown that etc.”, you would add a “dash” just before the “@” and code it as such:</p>
+<pre><code>Kühne et al. [-@Kuhne2009-tn] have shown that etc.&quot;</code></pre>
+<p>If you want to cite several references, you would add a semicolon between the two such as in:</p>
+<pre><code>&quot;reproducible research has been suggested to become the norm [@Kuhne2009-tn; @Buckheit1995-ls]&quot;</code></pre>
+<p>Notice that among all the fields from the example above, there are <code>doi</code> and <code>issn</code>. <code>doi</code> stands for “Digital Object Identifier”. <code>issn</code> stands for International Standard Serial Number (ISSN), which is an eight-digit serial number used to uniquely identify a serial publication. The <code>doi</code> value in this example is <code>10.2481/dsj.8.18</code>, which is unique in the world. These <code>doi</code> are applied to articles but not only. They are also applied to data. Eventually, all data that will be used in an article will have to have its own <code>doi</code> and all the codes that are used to analyze the data will refer to this unique <code>doi</code>. This is not quite implemented yet (in 2017), but will likely be by 2022. <code>doi</code> or <code>url</code> (not added here; stands for Uniform Resource Locator. Quite a mouthful, really, for what it is: a web address) are not necessarily exported from your reference software by default. Make sure you add this possibility, as <code>doi</code> is almost routinely added in the reference list in most journals.</p>
+<p><br/></p>
+<p>The reference list of the citations will appear right after you place</p>
+<pre><code># References</code></pre>
+<p>at the bottom of your Rmd docucment, if it a single Rmd document, or as a separate chapter for a book. When rendering your document, the list will appear automatically afterwards, and if you have in text notes, these will appear underneath.</p>
+<p><br/></p>
+<div id="link-to-citations" class="section level3">
+<h3><span class="header-section-number">5.2.1</span> Link to citations</h3>
+<p>In a single Rmd document (not a book) One very nice feature is to create hyperlinks from the in-text citations to the citations in the reference section. For this, just add <code>link-citations: true</code> in the YAML header.</p>
+<p><br/></p>
+</div>
+<div id="csl-and-styling-of-citations" class="section level3">
+<h3><span class="header-section-number">5.2.2</span> CSL and styling of citations</h3>
+<p>CSL stands for Citation Style Language. The CSL line command is an option for the citation styles to be used in your document. You can comment it out by adding a “#” in front of it and the default .CSL file will apply without you noticing it. Each journal has its own way of handling how an article/reference should be cited in the text, and in the reference section, and there are hundreds of different styles out there… You can read lots of details on this <a href="http://docs.citationstyles.org/en/stable/primer.html">CSL primer</a> about how all this works.</p>
+<p>While I was writing this tutorial, I did not specify at first the citation style. And I kept getting, using the same example as before, “(Kühne and Liehr 2009)”, although I wanted “(Kühne and Liehr, 2009)”, i.e., with a comma between the authors and the date, because this is the way I always did it and I think it is a lot better this way. Then I started thinking about the journals for which the inline citations are numbers, sometimes in brackets, sometimes without brackets… what a nightmare…! Actually it is extremely simple: all this is done automatically when you specify the CSL corresponding to the journal style following which you wish to write.</p>
+<p>For this, you can pick at <a href="https://github.com/citation-style-language/styles" class="uri">https://github.com/citation-style-language/styles</a> the *.CSL file you are looking for (actually there are too many of them and they are not all displayed). The fastest way is to Google “<journal name> CSL”, and you will land on the CSL file you are looking for. I recommend that you click on the <code>raw</code> icon on GitHub, and copy all the file in a text editor. Warning! You need to make sure that your text editor does not add any weird formatting or add an extension at the end of the file. I had that problem and I could not see the extension on my computer, although I had the option to display so. Save the file in the same directory as your .Rmd.</p>
+<p>So, to go back with my struggling to style the inline citation and the “missing comma”, it turns out that the default CSL file uses a “<a href="http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html#citation_styles">Chicago author-date format</a>” (I am not sure what this means exactly), which in text styling is “(author date)”, without the comma…! If you use “journal-of-hydrology.CSL”, you will see that all of a sudden after you <code>knit</code>, the commas just appeared…! Eureka! If you use “nature.CSL” (because we all want to be ready when we publish in Nature!), you will see that there are no more in-line citations, just numbers in superscript, hyphenated when needed, and the references are all in order, with the journal names in italics, the journal volume in bold, the year in parenthesis at the end, etc.! Is not that wonderful? Without your doing anything, other than adding the citation properly in the text following the guidelines above.</p>
+<p>You can, if you want and have a lot of time to waste, take existing CSL files and modify them to have your own custom citation style. Make sure you take an “independent” CSL file and modify it. Most of them are dependent upon a “source” or independent one, and the code in the CSL file is just saying how the dependent file should slightly alter the independent one. Good instructions on how to do this can be found on the excellent <a href="http://docs.citationstyles.org/en/stable/primer.html">CSL primer</a>.</p>
+
+</div>
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-Maxwell2018-ht">
+<p>Maxwell, Bryan M, François Birgand, Louis A Schipper, Laura E Christianson, Shiying Tian, Matthew J Helmers, David J Williams, George M Chescheir, and Mohamed A Youssef. 2018. “Drying–Rewetting Cycles Affect Nitrate Removal Rates in Woodchip Bioreactors.” <em>J. Environ. Qual.</em> Madison, WI: The American Society of Agronomy, Crop Science Society of America,; Soil Science Society of America, Inc. doi:<a href="https://doi.org/10.2134/jeq2018.05.0199">10.2134/jeq2018.05.0199</a>.</p>
+</div>
+<div id="ref-Wikipedia_contributors2018-ia">
+<p>Wikipedia contributors. 2018. “Denitrification.” <a href="https://en.wikipedia.org/w/index.php?title=Denitrification&amp;oldid=872283218" class="uri">https://en.wikipedia.org/w/index.php?title=Denitrification&amp;oldid=872283218</a>. <a href="https://en.wikipedia.org/w/index.php?title=Denitrification&amp;oldid=872283218" class="uri">https://en.wikipedia.org/w/index.php?title=Denitrification&amp;oldid=872283218</a>.</p>
+</div>
+<div id="ref-Kuhne2009-tn">
+<p>Kühne, Martin, and Andreas W Liehr. 2009. “Improving the Traditional Information Management in Natural Sciences.” <em>Data Sci. J.</em> 8: 18–26. doi:<a href="https://doi.org/10.2481/dsj.8.18">10.2481/dsj.8.18</a>.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="code-chunks.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="final-words.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/04-Referencing-references.Rmd",
+"text": "Edit"
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
